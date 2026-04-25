@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "List moderators - no auth",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 401,
+      "expectedBody": {"error": "string"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
